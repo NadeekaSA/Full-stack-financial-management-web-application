@@ -240,7 +240,7 @@ export const BudgetManager: React.FC = () => {
         <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-lg p-6 text-white">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-green-100 text-sm">Total Spent</p>
+              <p className="text-green-100 text-sm"></p>
               <p className="text-2xl font-bold">{formatCurrency(getTotalSpent())}</p>
             </div>
             <DollarSign className="h-8 w-8 text-green-200" />
@@ -250,7 +250,7 @@ export const BudgetManager: React.FC = () => {
         <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg p-6 text-white">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-purple-100 text-sm">Remaining</p>
+              <p className="text-purple-100 text-sm">Total Spent</p>
               <p className="text-2xl font-bold">{formatCurrency(getTotalBudget() - getTotalSpent())}</p>
             </div>
             <DollarSign className="h-8 w-8 text-purple-200" />
